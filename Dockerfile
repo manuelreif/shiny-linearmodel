@@ -34,7 +34,8 @@ COPY app.R /srv/shiny-server/
 
 RUN chmod -R 755 /srv/shiny-server
 
-EXPOSE 3838
+EXPOSE 8080
+
 RUN chmod -R 755 /srv/shiny-server
 
 CMD ["/usr/bin/shiny-server"]
